@@ -51,7 +51,7 @@ require_once 'CRM/Financial/BAO/FinancialType.php';
  * @access public
  */
 function civicrm_api3_financial_type_create($params) {
-  return _civicrm_api3_basic_create(_civicrm_api3_get_BAO(__FUNCTION__), $params);
+  return _civicrm_api3_basic_create(_civicrm_api3_get_BAO(__FUNCTION__), $params, 'FinancialType');
 }
 
 /**
@@ -76,7 +76,7 @@ function _civicrm_api3_financial_type_create_spec(&$params) {
  * @access public
  */
 function civicrm_api3_financial_type_delete($params) {
-  return _civicrm_api3_basic_delete(_civicrm_api3_get_DAO(__FUNCTION__), $params);
+  return _civicrm_api3_basic_delete(_civicrm_api3_get_BAO(__FUNCTION__), $params);
 }
 
 /**
@@ -95,6 +95,6 @@ function civicrm_api3_financial_type_delete($params) {
  */
 function civicrm_api3_financial_type_get($params) {
 
-  return _civicrm_api3_basic_get(_civicrm_api3_get_DAO(__FUNCTION__), $params);
+  return _civicrm_api3_basic_get(_civicrm_api3_get_BAO(__FUNCTION__), $params);
 }
 
