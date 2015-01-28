@@ -61,7 +61,6 @@ function civicrm_api3_financial_type_create($params) {
  * @param array $params array or parameters determined by getfields
  */
 function _civicrm_api3_financial_type_create_spec(&$params) {
-  // TODO a 'clever' default should be introduced
 }
 
 /**
